@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;1,300&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    top: 0;
+    justify-content: center;
+}
+
+nav ul {
+    position: fixed;
+    top: 20px;
+    left: 75px;
+    display: inline-block;
+    color: #b2c1e0;
+    font-size: large;
+    margin-top: 20px;
+}
+
+a {
+    display: inline-block;
+    margin-left: 45px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+a:hover {
+    color: #df300d;
+    font-size: 20px;
+    transition: 0.7s;
+}
+    
+.icon-mario {
+    display: inline-block;
+    position: fixed;
+    height: 50px;
+    top: 20px;
+    left: 12px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    font-family: Quicksand, sans-serif;
+}
+
+.poster-mario {
+    width: 200px;
+}
+
+.logo-mario-luigi {
+    height: 400px;
+}
+
+.caixa-principal {
+    width: 40%;
+}
+
+button {
+    color: white;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    padding: 14px;
+    border-radius: 5px;
+    margin-top: 40px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    color: red;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.video-mario {
+    position: fixed;
+    top: 0; /* Coloca o elemento no topo, caso seja 0*/
+    z-index: -1; /* Posiciona o item video ou imagem a frente ou no fundo da tela*/
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.whatsapp {
+    height: 50px;
+    position: fixed;
+    right: 10px; /* Coloca o elemento na direita (right)*/
+    bottom: 10px; /* Coloca o elemento no fundo (bottom*/
+    cursor: pointer;
+}
+
+.mascara-video {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(8, 8, 15, 0.37) 0%, rgba(19,18,10,0.908000700280112) 85%);
+}
+
+p {
+    color: #b2c1e0;
+    
+    font-size: 16px;
+}
+
+.p-one {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.form-orçamento {
+    background-color: #fff;
+    display: flex;
+    gap: 8px; /* Espaçamento dos itens, precisa usar o display flex */
+    flex-direction: column; /* Direção dos elementos, no caso formulario (em coluna)*/
+    position: fixed;  /* Posição na tela*/
+    top: 180px;
+    left: -237px;
+    padding: 15px;
+    border-radius: 5px;
+    justify-content: center;
+    z-index: 1;
+    transition: left 1s ease-in-out; /* Faz a transição em segundos, de configurações do elemento */
+}
+
+input {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 4px;
+    outline-color: orangered;
+    
+}
+
+.button-form {
+    color: rgb(255, 255, 255);
+    background-color: #666565;
+}
+
+.button-form:hover {
+    color: white;
+    background-color: rgb(60, 61, 60);
+    transition: 0.5s;
+}
+
+textarea {
+    width: 217px;
+    height: 80px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 4px;
+    outline-color: rgb(255, 102, 0); /*Linha de fora do input(borda)*/
+}
+
+.mascara-formulario {
+    visibility: hidden; /*Visibilidade = escondido*/
+    background: rgb(8,8,15);
+    background: radial-gradient(circle, rgba(8,8,15,0) 0%, rgba(22,4,4,0.8799894957983193) 75%);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: visibility 1s ease-in-out;
+}
